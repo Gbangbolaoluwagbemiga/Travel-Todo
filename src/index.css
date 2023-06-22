@@ -134,8 +134,16 @@ input[type='checkbox'] {
 }
 /* MOBILE RESPONSIVENESS */
 @media screen and (max-width: 576px) {
-  .add-form {
-    gap: 0.3rem;
+  .add-form,
+  h3,
+  button {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  select,
+  input {
+    display: inline;
   }
   h1 {
     font-size: 3.5rem;
@@ -143,6 +151,13 @@ input[type='checkbox'] {
     word-spacing: 20px;
     letter-spacing: -5px;
     padding: 2rem 0;
+  }
+  select {
+    width: 30%;
+  }
+  input {
+    width: 60%;
+    margin-left: 1.5rem;
   }
 
   button,
@@ -153,7 +168,7 @@ input[type='checkbox'] {
     font-weight: 500;
     font-size: 1.5rem;
     margin-top: 1.5rem;
-    width: 70%;
+    /* width: 70%; */
   }
   button {
     width: 50%;
