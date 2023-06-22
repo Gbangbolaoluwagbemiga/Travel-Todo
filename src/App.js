@@ -1,11 +1,16 @@
 import {useState} from 'react';
 
 function App() {
+  const [items, setItems] = useState([]);
+  function handleAddItems(item) {
+    setItems(prev => [...prev, item]);
+  }
+
   return (
     <div className="app">
       <Logo />
-      <Form />
-      <PackingList />
+      <Form onAddItems={handleAddItems} />
+      <PackingList items={items} />
       <Stats items={[]} />
     </div>
   );
@@ -24,7 +29,6 @@ function Form({onAddItems}) {
     if (!description) return;
 
     const newItem = {description, quantity, packed: false, id: Date.now()};
-
     onAddItems(newItem);
 
     setDescription('');
@@ -54,7 +58,29 @@ function Form({onAddItems}) {
     </form>
   );
 }
-function PackingList() {}
+function PackingList({items}) {
+  return (
+    <div className="list">
+      <ul>
+        {items.map(item => (
+          <Item item={item} />
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function Item({item}) {
+  return (
+    <li>
+      <span style={item.packed ? {textDecoration: 'Line-through'} : {}}>
+        {item.quantity}
+        {item.description}
+      </span>
+      <button>❌</button>
+    </li>
+  );
+}
 function Stats({items}) {
   if (!items.length)
     return (

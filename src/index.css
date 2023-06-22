@@ -96,7 +96,7 @@ input {
 .list ul {
   list-style: none;
   width: 80%;
-  overflow: scroll;
+  overflow: auto;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -171,7 +171,6 @@ input[type='checkbox'] {
     font-weight: 500;
     font-size: 1.5rem;
     margin-top: 1.5rem;
-    /* width: 70%; */
   }
   button {
     width: 50%;
@@ -179,5 +178,20 @@ input[type='checkbox'] {
   h3 {
     margin-right: 1rem;
     font-size: 2rem;
+  }
+  .list li {
+    gap: 1.2rem;
+  }
+
+  .list ul {
+    list-style: none;
+    width: 99%;
+    overflow: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-content: start;
   }
 }
