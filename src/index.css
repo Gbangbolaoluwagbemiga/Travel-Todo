@@ -19,7 +19,7 @@ body {
 }
 
 .app {
-  width: 100%;
+  width: 99%;
   height: 100vh;
   display: grid;
   grid-template-rows: auto auto 1fr auto;
@@ -79,6 +79,7 @@ input {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 3.2rem;
   align-items: center;
 }
@@ -130,4 +131,31 @@ input[type='checkbox'] {
   text-align: center;
   font-weight: 700;
   padding: 3.2rem 0;
+}
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 576px) {
+  .add-form {
+    gap: 0.3rem;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    word-spacing: 20px;
+    letter-spacing: -5px;
+    padding: 2rem 0;
+  }
+
+  button,
+  select,
+  input {
+    border-radius: 10rem;
+    padding: 1rem 2.5rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    width: 70%;
+  }
+  button {
+    width: 50%;
+  }
 }

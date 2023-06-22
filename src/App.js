@@ -5,6 +5,7 @@ function App() {
     <div className="app">
       <Logo />
       <Form />
+      <PackingList />
       <Stats items={[]} />
     </div>
   );
@@ -53,7 +54,7 @@ function Form({onAddItems}) {
     </form>
   );
 }
-
+function PackingList() {}
 function Stats({items}) {
   if (!items.length)
     return (
