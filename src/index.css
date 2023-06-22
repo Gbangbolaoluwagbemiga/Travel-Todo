@@ -180,7 +180,7 @@ input[type='checkbox'] {
     font-size: 2rem;
   }
   .list li {
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
   .list li button {
