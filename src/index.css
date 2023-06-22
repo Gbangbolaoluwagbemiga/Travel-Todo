@@ -194,6 +194,7 @@ input[type='checkbox'] {
     list-style: none;
     width: 100%;
     overflow: none;
+    padding: 0 1.5rem;
 
     display: flex;
     flex-wrap: wrap;
