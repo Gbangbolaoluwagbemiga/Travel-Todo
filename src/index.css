@@ -134,6 +134,9 @@ input[type='checkbox'] {
 }
 /* MOBILE RESPONSIVENESS */
 @media screen and (max-width: 576px) {
+  .add-form {
+    padding: 1rem;
+  }
   .add-form,
   h3,
   button {
@@ -157,7 +160,7 @@ input[type='checkbox'] {
   }
   input {
     width: 60%;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
   }
 
   button,
