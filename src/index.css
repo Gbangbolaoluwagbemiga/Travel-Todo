@@ -138,7 +138,7 @@ input[type='checkbox'] {
     gap: 0.3rem;
   }
   h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 400;
     word-spacing: 20px;
     letter-spacing: -5px;
@@ -157,5 +157,9 @@ input[type='checkbox'] {
   }
   button {
     width: 50%;
+  }
+  h3 {
+    margin-right: 1rem;
+    font-size: 2rem;
   }
 }
