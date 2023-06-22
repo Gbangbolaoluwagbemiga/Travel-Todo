@@ -180,17 +180,24 @@ input[type='checkbox'] {
     font-size: 2rem;
   }
   .list li {
-    gap: 1.2rem;
+    gap: 1rem;
+  }
+
+  .list li button {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    transform: translateY(-1px);
   }
 
   .list ul {
     list-style: none;
-    width: 99%;
+    width: 100%;
     overflow: none;
 
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.7rem;
     justify-content: space-between;
     align-content: start;
   }

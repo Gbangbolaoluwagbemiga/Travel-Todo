@@ -74,8 +74,7 @@ function Item({item}) {
   return (
     <li>
       <span style={item.packed ? {textDecoration: 'Line-through'} : {}}>
-        {item.quantity}
-        {item.description}
+        {`${item.quantity}${item.description}`}
       </span>
       <button>❌</button>
     </li>
