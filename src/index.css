@@ -97,12 +97,6 @@ input {
   list-style: none;
   width: 80%;
   overflow: auto;
-
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-  /* gap: 1.2rem;
-  justify-content: center;
-  align-content: start; */
 }
 
 .list li {
@@ -134,6 +128,10 @@ input[type='checkbox'] {
 }
 /* MOBILE RESPONSIVENESS */
 @media screen and (max-width: 576px) {
+  .app {
+    height: 95vh;
+  }
+
   .add-form {
     padding: 1rem;
   }
