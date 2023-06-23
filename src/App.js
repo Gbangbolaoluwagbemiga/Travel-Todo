@@ -60,8 +60,8 @@ function Form({onAddItems}) {
 }
 function PackingList({items}) {
   return (
-    <div className="list">
-      <ul>
+    <div className=" list">
+      <ul className="row ">
         {items.map(item => (
           <Item item={item} />
         ))}
@@ -72,9 +72,9 @@ function PackingList({items}) {
 
 function Item({item}) {
   return (
-    <li>
+    <li className=" col-4 mb-5">
       <span style={item.packed ? {textDecoration: 'Line-through'} : {}}>
-        {`${item.quantity}${item.description}`}
+        {item.quantity} {item.description}
       </span>
       <button>❌</button>
     </li>
