@@ -201,4 +201,9 @@ input[type='checkbox'] {
     width: 1.5rem;
     margin-right: 0.5rem;
   }
+
+  .stats {
+    font-weight: 500;
+    padding: 2rem 0;
+  }
 }
