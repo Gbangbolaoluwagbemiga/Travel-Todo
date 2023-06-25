@@ -206,7 +206,7 @@ input[type='checkbox'] {
   }
   .actions button,
   .list select {
-    transform: translateY(30px);
+    transform: translateY(20px);
     padding: 0.8rem 2rem;
     width: 50%;
     font-size: 1.2rem;
