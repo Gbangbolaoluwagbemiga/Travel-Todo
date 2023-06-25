@@ -204,4 +204,21 @@ input[type='checkbox'] {
     font-weight: 500;
     padding: 1.5rem 0;
   }
+  .actions button,
+  .list select {
+    transform: translateY(30px);
+    padding: 0.8rem 2rem;
+    width: 50%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 0.8rem;
+    display: inline;
+  }
+  .actions {
+    margin: 0 auto;
+  }
+  .actions button {
+    padding: 0.8rem 0;
+    width: 30%;
+  }
 }
