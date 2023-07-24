@@ -43,7 +43,5 @@ export function PackingList({items, onDeleteItems, onToggleItem, onClearList}) {
         </div>
       )}
     </div>
-
-    // </div>
   );
 }
